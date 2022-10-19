@@ -27,7 +27,7 @@ jobs:
         cache: maven
     
     - name: Build Application JAR
-      working-directory: ../
+      working-directory: ../rest_carro
       run: mvn clean package
       
 
