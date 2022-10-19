@@ -32,13 +32,13 @@ jobs:
       run: mvn clean package
       
 
-#    - name: Docker Compose Build
-#      working-directory: ../
-#      run: docker compose build
-#
-#    - name: Push to Docker Hub Container Registry
-#      run: |
-#        docker tag ${{ secrets.DOCKER_USERNAME }}/rest_carro:latest ${{ secrets.DOCKER_USERNAME }}/rest_carro:${{ github.run_id }}
-#
-#        docker push ${{ secrets.DOCKER_USERNAME }}/rest_carro:${{ github.run_id }}
-#        docker push ${{ secrets.DOCKER_USERNAME }}/rest_carro:latest
+    - name: Docker Compose Build
+      #working-directory: ../
+      run: docker compose build
+
+    - name: Push to Docker Hub Container Registry
+      run: |
+        docker tag ${{ secrets.DOCKER_USERNAME }}/rest_carro:latest ${{ secrets.DOCKER_USERNAME }}/rest_carro:${{ github.run_id }}
+
+        docker push ${{ secrets.DOCKER_USERNAME }}/rest_carro:${{ github.run_id }}
+        docker push ${{ secrets.DOCKER_USERNAME }}/rest_carro:latest
