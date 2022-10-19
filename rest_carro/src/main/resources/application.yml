@@ -3,7 +3,11 @@ server:
 cors:
   originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
 file:
+<<<<<<< HEAD
   upload-dir: ../
+=======
+  upload-dir: /Code/UploadDir
+>>>>>>> e807d1d20a15fd5e809ae7237359010dab851c4e
 security:
   jwt:
     token:
