@@ -25,7 +25,7 @@ public class CarroController {
     @Autowired
     CarroService service;
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    //@CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}")
     @Operation(summary = "Finds a Carro", description = "Finds a Carro",
             tags = {"Carro"},
