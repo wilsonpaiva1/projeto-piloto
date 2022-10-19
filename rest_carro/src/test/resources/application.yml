@@ -1,9 +1,10 @@
 server:
-  port: 80
+  port: 8888
 cors:
   originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
 file:
-  upload-dir: ../
+  #upload-dir: ../
+  upload-dir: /home/runner/work/api-rest-spring/UploadDir
 security:
   jwt:
     token:
@@ -22,6 +23,7 @@ spring:
     show-sql: true
   springdoc:
     pathsToMatch:
+      /auth/**
       /api/**/v1/**
     swagger-ui:
       use-root-path: true
@@ -31,3 +33,4 @@ spring:
       file-size-threshold: 2KB
       max-file-size: 200MB
       max-request-size: 215MB
+
