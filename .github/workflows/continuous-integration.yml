@@ -33,7 +33,7 @@ jobs:
       
 
     - name: Docker Compose Build
-      #working-directory: ./projeto-piloto
+      working-directory: ../
       run: docker compose build
 
     - name: Push to Docker Hub Container Registry
