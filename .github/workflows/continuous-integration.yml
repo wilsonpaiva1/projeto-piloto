@@ -25,7 +25,7 @@ jobs:
         cache: maven
 
     - name: Build Application JAR
-      working-directory: ./projeto-piloto/rest-carro
+      working-directory: ./rest-carro
       run: mvn clean package
 
     - name: Docker Compose Build
