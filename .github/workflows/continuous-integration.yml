@@ -27,7 +27,8 @@ jobs:
         cache: maven
     
     - name: Build Application JAR
-      working-directory: ../projeto-piloto/rest_carro/
+      working-directory: ./rest_carro/
+      #working-directory: ../projeto-piloto/rest_carro/
       run: mvn clean package
       
 
